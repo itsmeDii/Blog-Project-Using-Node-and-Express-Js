@@ -1,0 +1,9 @@
+<%- include("partials/header.ejs") %>
+<main class="post-container">
+    <form action="/post" method="post">
+        <input type="text" name="title" class="title-input" placeholder="Title"> <br>
+        <textarea name="content" placeholder="Description" class="description-input"></textarea> <br>
+        <div class="submit-btn"><input type="submit" value="Submit" class="btn-submit" id="submit-btn"></div>
+    </form>
+</main>
+<%- include("partials/footer.ejs") %>

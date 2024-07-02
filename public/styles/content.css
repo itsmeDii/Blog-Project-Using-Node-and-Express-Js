@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home-container{
+    width: 100%;
+    height: 89vh;  
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+.post-container{
+    width: 100%;
+    height: 89vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.post-container form {
+    width: 60%;
+    height: 100%; 
+    max-height: 100%; 
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.post-container form .title-input{
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    font-size: 35px;
+    padding: 3px 0px 3px 0px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.post-container form textarea{
+    height: 600px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 0px 0px 0px;
+    cursor: pointer;
+    resize: none; 
+    overflow: auto;
+}
+
+.post-option{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding-right: 5px;
+}
+.option-btn{
+    cursor: pointer;
+}
+.fa-solid fa-ellipsis{
+    cursor: pointer;
+}
+.option-item{
+    text-align: center;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    background-color: #1c1e21;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 3px;
+    display: none;
+    user-select: none;
+}
+
+.option-item li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.option-item.active{
+    display: block;
+}
+
+.post-container form textarea::-webkit-scrollbar {
+    display: none; 
+}
+
+.post-container form .submit-btn{
+    display: flex;
+    justify-content: end;
+}
+.post-container form .submit-btn .btn-submit{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1c1e21;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container-post{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    text-wrap: wrap;
+}
+.container-post p{
+    font-size: 17px;
+}
+.content{
+    width: 60%;
+    height: 100%;
+}

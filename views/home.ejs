@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+<main class="home-container">
+    <div class="content">
+        <% if (feed.length > 0) { %>
+            <% feed.forEach(post => { %>
+                <%- post %>
+            <% }); %>
+        <% } else { %>
+            <h1>No items posted.</h1>
+        <% } %>
+    </div>
+</main>
+<%- include("partials/footer.ejs") %>
