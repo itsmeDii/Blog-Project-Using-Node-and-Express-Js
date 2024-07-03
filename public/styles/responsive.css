@@ -1,0 +1,96 @@
+@media (min-width: 576px) and (max-width: 767px) {
+    .home-container{
+        height: 88vh;  
+    }
+    .post-container{
+        height: 88vh;  
+    }
+    .post-container form {
+        width: 90%;
+    }
+    .post-container form textarea{
+        height: 500px;
+        width: 100%;
+    }
+    .content{
+        width: 90%;
+    }
+    .option-item{
+        top: 20px;
+        right: -36px;
+    }
+    
+}
+
+@media (min-width: 768px ) and (max-width: 991px) {
+    .home-container{
+        height: 88vh;  
+    }
+    .post-container{
+        height: 88vh;  
+    }
+    .post-container form {
+        width: 90%;
+    }
+    .post-container form textarea{
+        height: 500px;
+        width: 100%;
+    }
+    .content{
+        width: 90%;
+    }
+    .option-item{
+        top: 20px;
+        right: -36px;
+    }
+    
+}
+
+@media (min-width: 992px ) and (max-width: 1199px) {
+    .home-container{
+        height: 88vh;  
+    }
+    .post-container{
+        height: 88vh;  
+    }
+    .post-container form {
+        width: 70%;
+    }
+    .post-container form textarea{
+        height: 500px;
+        width: 100%;
+    }
+    .content{
+        width: 70%;
+    }
+    .option-item{
+        top: 0;
+        right: -120px;
+    }
+    
+}
+
+@media (min-width: 1200px ){
+    .home-container{
+        height: 88vh;  
+    }
+    .post-container{
+        height: 88vh;  
+    }
+    .post-container form {
+        width: 60%;
+    }
+    .post-container form textarea{
+        height: 500px;
+        width: 100%;
+    }
+    .content{
+        width: 60%;
+    }
+    .option-item{
+        top: 0;
+        right: -120px;
+    }
+    
+}
+

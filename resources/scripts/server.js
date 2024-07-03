@@ -31,8 +31,11 @@ app.post("/post", (req, res) => {
 
 app.post("/delete", (req, res) => {
     const index = parseInt(req.body.index, 10);
-    feed.pop(index, 1); 
-    res.redirect("/home");
+    if (!isNaN(index) && index >= 0 && index < feed.length) {
+        feed.splice(index, 1); 
+    }
+    console.log(req.body);
+    res.redirect("/home"); 
 });
 
 app.listen(port, () => {
