@@ -80,9 +80,11 @@
     user-select: none;
 }
 
-.option-item li{
-    list-style: none;
-    user-select: none;
+.delete-btn{
+    border: none;
+    outline: none;
+    background-color: #1c1e21;
+    color: #ffffff;
     cursor: pointer;
 }
 

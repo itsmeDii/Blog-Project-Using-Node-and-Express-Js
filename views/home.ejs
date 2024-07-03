@@ -2,9 +2,21 @@
 <main class="home-container">
     <div class="content">
         <% if (feed.length > 0) { %>
-            <% feed.forEach(post => { %>
-                <%- post %>
-            <% }); %>
+            <% feed.forEach((item, index) => { %>
+                <div class="container-post">
+                    <div class="post-option">
+                        <i class="fa-solid fa-ellipsis option-btn"></i>
+                        <div class="option-item">
+                            <form action="/delete" method="post">
+                                <input type="hidden" name="index" value="<%= index %>">
+                                <input type="submit" value="Delete" class="delete-btn">
+                            </form>
+                        </div>
+                    </div>
+                    <h1><%= item.title %></h1>
+                    <p><%- item.description %></p>
+                </div>
+            <% }) %>
         <% } else { %>
             <h1>No items posted.</h1>
         <% } %>

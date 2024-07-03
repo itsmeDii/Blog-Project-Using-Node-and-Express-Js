@@ -16,14 +16,4 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
     });
-
-    deleteButtons.forEach((deleteButton, index) => {
-        deleteButton.addEventListener("click", () => {
-            containerPosts.forEach((post, postIndex) => {
-                if (index === postIndex) {
-                    post.remove();
-                }
-            });
-        });
-    });
 });
